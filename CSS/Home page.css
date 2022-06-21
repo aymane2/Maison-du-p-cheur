@@ -1,0 +1,121 @@
+
+  
+  h1 {
+    text-align: center
+
+  }
+  h4 {
+    text-align: center
+
+  }
+  p {
+    text-align: center
+
+  }
+  h5 {
+    text-align: center;
+    color: #000;
+    font-size: 26px;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+    margin: 30px 0 60px;
+
+  }
+  h2 {
+    color: #000;
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin: 30px 0 60px;
+}
+  h2::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 4px;
+    border-radius: 1px;
+    background: #ffa710;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+  }
+  div [class^="col-"]{
+    padding: 25px 15px;
+
+}  
+
+.navbar{
+  font-size: 16px;
+}
+
+
+
+.fa-solid{
+  color: #ffa710;
+  text-align:center
+}
+
+.fa-regular{
+  color: #ffa710;
+  text-align:center
+}
+  .card{
+    transition:0.5s;
+    cursor:pointer;
+    margin: 50px auto;
+    padding: 0 70px
+  }
+  .card-title{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+  }
+
+  .card-title i{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+    color:#ffa710
+  }
+  .card-title i:hover{
+    transform: scale(1.25) rotate(100deg); 
+    color:#18d4ca;
+    
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .card-text{
+    text-align: center;
+    overflow: hidden;
+    height:80px;  
+
+  }
+  
+  .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+  
